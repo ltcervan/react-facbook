@@ -1,19 +1,23 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Newsfeed from '../components/Newsfeed';
-// import RandomUpdates from '../components/RandomUpdates';
+import RandomUpdates from '../components/RandomUpdates';
 // import Messages from '../components/Messages';
 // import Notifications from '../components/Notifications';
 
-// import Link from 'next/link';
-// import Image from 'next/image';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() { // exporting the function Home
   return (
     <div className={styles.container}>
       <div>
-        <h5>Messages and Notification</h5>
+        {/* <Messages/> */}
       </div>
+      <div>
+        {/* <Notification/> */}
+      </div>
+
       <Head>
         <title>React-Facebook</title>
         <link rel="icon" href="/favicon.ico" />
@@ -23,16 +27,14 @@ export default function Home() { // exporting the function Home
         <h1 className={styles.title}>
         React-Facebook
         </h1>
-        <p className={styles.description}>
-          Get started by reading the blog.
-        </p>
       </main>
       <div>
         <h2 className={styles.description}> Newsfeed </h2> 
         <Newsfeed/>
       </div>
       <div>
-        <h2>Random Updates</h2>
+      <h2 className={styles.description}> Random Updates </h2> 
+        <RandomUpdates/>
       </div>
 
 
