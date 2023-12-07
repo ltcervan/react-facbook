@@ -1,0 +1,29 @@
+.feedContainer {
+    max-width: 450px;
+    padding: 25px;
+    border: 1px solid black;
+}
+
+.feedHeader {
+    display: flex;
+    gap: 10px;
+}
+
+.topTextFeed {
+    padding: 10px 0;
+}
+
+.ulList {
+    list-style-type: none;
+    
+    padding-left: 0;
+}
+
+.ulList li{
+    padding-bottom: 10px;
+}
+
+.feedTotals, .feedSocial{
+    display: flex;
+    justify-content: space-between;
+}

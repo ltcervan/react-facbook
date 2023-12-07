@@ -1,56 +1,90 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Newsfeed from '../components/Newsfeed';
+import Newsfeed from '../components/HomePage/Newsfeed';
 import RandomUpdates from '../components/RandomUpdates';
-// import Messages from '../components/Messages';
-// import Notifications from '../components/Notifications';
+import Messages from '../components/Messages';
+import Notifications from '../components/Notifications';
 
 import Link from 'next/link';
 import Image from 'next/image';
+import NewsFeed from '../components/HomePage/Newsfeed';
 
 export default function Home() { // exporting the function Home
   return (
+    //   {/*
+    //   container
+
+    //   navigation
+    //   Subcontainer 
+    //   <section> sidebar  
+    //    <section>content  
+    //    <section>sidebar
+
+
+    // */}
+
     <div className={styles.container}>
-      <div>
-        {/* <Messages/> */}
-      </div>
-      <div>
-        {/* <Notification/> */}
-      </div>
+      {/* NAVIGATIONS */}
+      <section className='navivation'>
+        <ul className='logoUL'>
+          <li>logo</li>
+          <li>Search bar</li>
+        </ul>
+        <ul className='mainRoutes'>
+          <li>home</li>
+          <li>games</li>
+          <li>groups</li>
+          <li>videos</li>
+        </ul>
+        <ul>
+          <li>grid</li>
+          <li>messenger</li>
+          <li>notifications</li>
+          <li>profile</li>
+        </ul>
+      </section>
+      {/* CONTAINER FOR MAIN SECTIONS 
 
-      <Head>
-        <title>React-Facebook</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      MAIN
+      
+      */}
+      <section className='mainContainer'>
+      {/*  START OF LEFT SIDE BAR/////////////////////// */}
+        <div className='leftSidebar'>
+          {/* top area with user icon and name */}
+          <div className='userHeader'>
+            <div className='image'>image</div>
+            <div className='LSBProfileName'>name</div>
 
-      <main>
-        <h1 className={styles.title}>
-        React-Facebook
-        </h1>
-      </main>
-      <div>
-        <h2 className={styles.description}> Newsfeed </h2> 
-        <Newsfeed/>
-      </div>
-      <div>
-      <h2 className={styles.description}> Random Updates </h2> 
-        <RandomUpdates/>
-      </div>
+          </div>
+          {/* sidebar links */}
+          <ul className='rightSideNavigation'>
+            <li>friends</li>
+            <li>memories</li>
+            <li>saved</li>
+            <li>groups</li>
+            <li>video</li>
+            <li>market</li>
+            <li>feeds</li>
+            <li>events</li>
+            <li>ads manager</li>
+            <li>meta</li>
+            <li>See more...</li>
+          </ul>
+
+        </div>
+        {/*  END OF LEFT SIDE BAR /////////////////// */}
+        <div className='mainContent'>
+          <NewsFeed/>
+        </div>
+
+        <div className='rightSidebar'></div>
+
+
+      </section>
 
 
 
-
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
 
       <style jsx>{`
         main {
