@@ -1,0 +1,88 @@
+.rightSideBar {
+    padding: 20px;
+    max-width: 35%;
+    min-width: 20%;
+}
+
+.sponser__block{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.sponser__block img{
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.sponser__block:last-child{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(188, 188, 188);
+}
+
+.sponser__site{
+    font-size: .7rem;
+    color: rgb(125, 124, 124);
+}
+.sponser__title{
+    font-size: .8rem;
+}
+
+.bday__block{
+    display: flex;
+    border-bottom: 1px solid darkgray;
+    align-items:center;
+    padding-bottom: 5px;
+}
+
+.bday__block p{
+    font-size: .8rem;
+    padding-right: 10px;
+    
+}
+
+p.bday__icon{
+    font-size: 18px;
+}
+
+.bday__title{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.contacts__header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.contacts__headerLeft{
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.contacts__headerRight span{
+    font-size: 12px;
+    padding-right: 15px;
+}
+
+.friends__block{
+    display: flex;
+    align-items: center;
+    height: 3.0rem;
+    font-size: 11px;
+}
+
+.friends__words{
+    padding-left: 5px;
+}
+
+.friends__block img {
+    border-radius: 50%;
+}

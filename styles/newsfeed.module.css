@@ -1,12 +1,17 @@
 .feedContainer {
     max-width: 450px;
     padding: 25px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 0 2px 0px rgb(197, 197, 197);
+    background-color: white;
 }
 
 .feedHeader {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .topTextFeed {
@@ -26,4 +31,15 @@
 .feedTotals, .feedSocial{
     display: flex;
     justify-content: space-between;
+}
+
+.userIcon img{
+    border-radius: 50%;
+}
+.topTextFeed {
+    padding: 10px 0;
+}
+
+.timestamp{
+    font-size: .7rem;;
 }

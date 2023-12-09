@@ -1,0 +1,18 @@
+.navLeft__block{
+    display: flex;
+    align-items: center;
+    height: 3.0rem;
+    font-size: 11px;
+}
+
+.navLeft__words{
+    padding-left: 5px;
+}
+
+.navLeft__block img {
+    border-radius: 50%;
+}
+
+.navLeftWrapper {
+    padding: 25px;
+}

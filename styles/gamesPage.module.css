@@ -1,0 +1,104 @@
+/* MAIN CONTAINERS /////////////////////// */
+.gameWrapper {
+    display: flex;
+
+}
+
+.sideBar {
+    max-width: 250px;
+    background-color: white;
+}
+
+.mainContent {
+    max-width: 600px;
+    padding: 15px;
+
+}
+
+.game__TopPanelWraper {
+    display: flex;
+    gap: 10px;
+}
+
+/* GAME PANEL */
+.gamePanel {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    flex: 1 1 100px;
+    position: relative;
+
+}
+
+.game__MidPanelWraper {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    gap: 10px;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* SIDE PANEL */
+
+.sidebar__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.form {
+    margin: 10px;
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    max-width: 250px;
+}
+
+.yourgames__title{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px 0px 10px;
+}
+.divider{
+    height: 4px;
+    width: 200px;
+    background-color:#555;
+}
+
+.game__types span, 
+.saveGames span,
+.playDiv span {
+    padding: 10px;
+}
+
+.saveGames,
+.playDiv{
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #969696;
+}
+
+.h4,
+.yourGames p{
+    padding: 10px;
+}
+
+/* .playDiv{
+    border-bottom: 1px solid #969696;
+} */
