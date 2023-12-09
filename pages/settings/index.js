@@ -5,6 +5,9 @@ import NewsFeed from "../../components/HomePage/NewsFeed";
 import HPLeftSideBar from "../../components/HomePage/HPleftSideBar"
 import HPleftSide from "../../components/HomePage/HPleftSideBar";
 import SleftSideBar from "../../components/Settings/SleftSideBar";
+
+
+
 export default function Settings() {
     return (
 
